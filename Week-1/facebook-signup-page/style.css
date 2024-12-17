@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #ffffff, #d4d9e9);
+}
+
+.header {
+    background-color: #3b5998;
+    padding: 10px 0;
+    color: white;
+}
+
+.header-container {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+}
+
+.input-field {
+    margin-right: 10px;
+    text-align: left;
+}
+
+.input-field label {
+    font-size: 12px;
+    color: #ddd;
+    display: block;
+}
+
+.input-field input {
+    padding: 3px;
+    font-size: 12px;
+    width: 140px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.login-btn {
+    padding: 3px 10px;
+    font-size: 12px;
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    border-style: outset;
+    cursor: pointer;
+}
+
+.container {
+    width: 980px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 55%;
+    padding: 20px 0;
+}
+
+.left-section .description {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.world-map {
+    width: 100%;
+    height: auto;
+}
+
+.right-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.right-section input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.birthday label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #0f1240;
+}
+
+.birthday select {
+    padding: 5px;
+    font-size: 14px;
+    margin: 5px 5px 10px 0;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.gender input[type="radio"] {
+    margin-right: 5px; 
+}
+
+
+.signup-btn {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-style: outset;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.signup-btn:hover {
+    background-color: #36a420;
+}
+
+.create-page-link .terms-of-service{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.link{
+    color: #3b5998;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: white;
+    padding: 20px 0;
+    font-size: 12px;
+    color: #737373;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    width: 980px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links.second-line {
+    margin-top: 10px;
+}
+
+.copyright {
+    margin-top: 10px;
+}
