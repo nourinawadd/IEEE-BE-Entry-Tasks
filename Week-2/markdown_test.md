@@ -1,4 +1,4 @@
-### My Schedule
+## My Schedule
 ||*First*|*Second*|*Third*|*Fourth*|*Fifth*|
 |:-|-|-|-|-|-|
 |*Saturday*|Comp. Drawing|Dis. Systems||||
