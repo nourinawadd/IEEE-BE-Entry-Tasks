@@ -44,17 +44,13 @@ GROUP BY s.user_id;
 
 ### [Problem 6](https://www.hackerrank.com/challenges/the-report/problem)
 **Solution:** </br>
-SELECT * 
-FROM 
-(
-    SELECT 
-        CASE 
-            WHEN g.Grade < 8 THEN NULL 
-            ELSE s.Name 
-        END AS Name,
+SELECT 
+    CASE 
+        WHEN g.Grade >= 8 THEN s.Name 
+        ELSE NULL 
+        END AS Name, 
     g.Grade, s.Marks 
-    FROM Students s, Grades g 
-    WHERE s.Marks BETWEEN g.Min_Mark AND g.Max_Mark    
-) AS subquery
-ORDER BY subquery.Grade DESC, subquery.Name ASC;
+    FROM Grades AS g JOIN Students AS s 
+    ON s.Marks BETWEEN g.Min_Mark AND g.Max_Mark 
+ORDER BY g.Grade DESC, s.Name ASC;
 </br>
