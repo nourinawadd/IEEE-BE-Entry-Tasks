@@ -4,5 +4,8 @@ SELECT player_id, min(event_date) AS first_login FROM Activity GROUP BY player_i
 </br>
 ### [Problem 2](https://leetcode.com/problems/department-highest-salary/description/)
 **Solution:** </br>
-
+SELECT d.name AS Department, e.name AS Employee, e.salary AS Salary FROM Employee e JOIN Department d on e.departmentId = d.id WHERE e.salary = 
+(
+    SELECT max(e2.salary) FROM Employee e2 WHERE e2.departmentId = e.departmentId
+);
 </br>
