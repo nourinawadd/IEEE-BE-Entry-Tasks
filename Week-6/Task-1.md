@@ -9,3 +9,10 @@ SELECT d.name AS Department, e.name AS Employee, e.salary AS Salary FROM Employe
     SELECT max(e2.salary) FROM Employee e2 WHERE e2.departmentId = e.departmentId
 );
 </br>
+### [Problem 3](https://leetcode.com/problems/customers-who-never-order/description/)
+**Solution:** </br>
+SELECT c.name AS Customers FROM Customers c WHERE c.id NOT IN 
+(
+    SELECT o.customerId FROM Orders o JOIN Customers c ON c.id = o.customerId
+);
+</br>
